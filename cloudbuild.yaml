@@ -14,10 +14,8 @@
 
 # [START cloudbuild_quickstart_automate]
 steps:
-  - name: golang
-    args: ['go', 'run', 'quickstart-automate/main.go']
   - name: 'bash'
     script: |
       #!/usr/bin/env bash
-      echo "${_PUSHER}"
+      echo "hello ${_PUSHER}"
 # [END cloudbuild_quickstart_automate]
