@@ -17,6 +17,7 @@ steps:
   - name: 'bash'
     script: |
       #!/usr/bin/env bash
-      echo ${_PUSHER}
-      echo $_PUSHER
+      echo $PUSHER
+      echo ${PUSHER}
+      echo '${PUSHER}'
 # [END cloudbuild_quickstart_automate]
